@@ -4,7 +4,7 @@ import axios from "axios";
 
 import "./Images.css";
 const fetchImagesAPI = async () => {
-  const res = await axios.get("http://localhost:9000/images");
+  const res = await axios.get("https://dell3imagegenerator.onrender.com/images");
   return res.data;
 };
 
