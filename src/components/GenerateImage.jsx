@@ -6,7 +6,7 @@ import Images from "./Images";
 
 // Function to call the backend API
 const generateImageAPI = async (prompt) => {
-  const res = await axios.post("http://localhost:9000/generate-image", {
+  const res = await axios.post("https://dell3imagegenerator.onrender.com/generate-image", {
     prompt,
   });
   return res.data; // Return the data directly for easier access
